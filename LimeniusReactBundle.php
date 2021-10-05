@@ -1,6 +1,6 @@
 <?php
 
-namespace Limenius\ReactBundle;
+namespace Langivi\ReactBundle;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Limenius\ReactBundle\DependencyInjection\Compiler\CacheCompilerPass;
