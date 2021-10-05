@@ -1,6 +1,6 @@
 <?php
 
-namespace Langivi\ReactBundle\DependencyInjection;
+namespace Limenius\ReactBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
