@@ -1,6 +1,6 @@
 # ReactBundle
 
-ReactBundle integrates [ReactRenderer](https://github.com/Limenius/ReactRenderer) with Symfony. This lets you implement React.js client and server-side rendering in your Symfony projects, allowing the development of universal (isomorphic) applications.
+ReactBundle integrates [ReactRenderer](https://github.com/LangiviTechnology/ReactBundle) with Symfony. This lets you implement React.js client and server-side rendering in your Symfony projects, allowing the development of universal (isomorphic) applications.
 
 **Note**: If you are new to React.js, please note that this bundle is not by any means required to use React with Symfony. This allows you to do some advanced features such as Server Side Rendering, or injecting components directly from Twig tags.
 
@@ -12,19 +12,16 @@ Features include:
 * Error and debug management for server and client side code.
 * Simple integration with Webpack.
 
-[![Latest Stable Version](https://poser.pugx.org/limenius/react-bundle/v/stable)](https://packagist.org/packages/limenius/react-bundle)
-[![Latest Unstable Version](https://poser.pugx.org/limenius/react-bundle/v/unstable)](https://packagist.org/packages/limenius/react-bundle)
-[![License](https://poser.pugx.org/limenius/react-bundle/license)](https://packagist.org/packages/limenius/react-bundle)
+[![Latest Stable Version](https://poser.pugx.org/langivi/react-bundle/v/stable)](https://packagist.org/packages/langivi/react-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/langivi/react-bundle/v/unstable)](https://packagist.org/packages/langivi/react-bundle)
+[![License](https://poser.pugx.org/langivi/react-bundle/license)](https://packagist.org/packages/langivi/react-bundle)
 
-# Example
-
-For a complete example, with a sensible Webpack set up and a sample application to start with, check out [Symfony React Sandbox](https://github.com/Limenius/symfony-react-sandbox).
 
 # Documentation
 
 The documentation for this bundle is available in the `Resources/doc` directory of the bundle:
 
-* Read the [LimeniusReactBundle documentation](https://github.com/Limenius/ReactBundle/blob/master/Resources/doc/index.md)
+* Read the [LimeniusReactBundle documentation](https://github.com/LangiviTechnology/ReactBundle/blob/master/Resources/doc/index.md)
 
 # Installation
 

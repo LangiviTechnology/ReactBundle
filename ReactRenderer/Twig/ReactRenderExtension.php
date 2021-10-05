@@ -69,7 +69,7 @@ class ReactRenderExtension extends AbstractExtension
         $data = array(
             'component_name' => $componentName,
             'props' => $propsArray,
-            'dom_id' => 'sfreact-'.uniqid('reactRenderer', true),
+            'dom_id' => 'sfreact-' . uniqid('reactRenderer', true),
             'trace' => $this->shouldTrace($options),
         );
 
@@ -87,15 +87,15 @@ class ReactRenderExtension extends AbstractExtension
                 $str .= $tmpData;
             }
         }
-        $str .= '<div id="'.$data['dom_id'].'">';
+        $str .= '<div id="' . $data['dom_id'] . '">';
 
         if ($this->shouldRenderServerSide($options)) {
             $rendered = $this->serverSideRender($data, $options);
             if ($rendered['hasErrors']) {
-                $str .= $rendered['evaluated'].$rendered['consoleReplay'];
+                $str .= $rendered['evaluated'] . $rendered['consoleReplay'];
             } else {
                 $evaluated = $rendered['evaluated'];
-                $str .= $evaluated['componentHtml'].$rendered['consoleReplay'];
+                $str .= $evaluated['componentHtml'] . $rendered['consoleReplay'];
             }
         }
         $str .= '</div>';
@@ -125,8 +125,9 @@ class ReactRenderExtension extends AbstractExtension
         $data = array(
             'component_name' => $componentName,
             'props' => $propsArray,
-            'dom_id' => 'sfreact-'.uniqid('reactRenderer', true),
+            'dom_id' => strtolower($componentName) . '-' . uniqid(true),
             'trace' => $this->shouldTrace($options),
+            'className' => $options['class'] ?? ''
         );
 
         if ($this->shouldRenderClientSide($options)) {
@@ -143,11 +144,12 @@ class ReactRenderExtension extends AbstractExtension
                 $str .= $tmpData;
             }
         }
-        $str .= '<div id="'.$data['dom_id'].'">';
+        $class = $data['className'] ? 'class="' . $data['className'] . '"' : '';
+        $str .= '<div id="' . $data['dom_id'] . '" ' . $class . '>';
         if ($this->shouldRenderServerSide($options)) {
             $rendered = $this->serverSideRender($data, $options);
             $evaluated = $rendered['evaluated'];
-            $str .= $rendered['evaluated'].$rendered['consoleReplay'];
+            $str .= $rendered['evaluated'] . $rendered['consoleReplay'];
         }
         $str .= '</div>';
 
@@ -176,7 +178,7 @@ class ReactRenderExtension extends AbstractExtension
             $propsString
         );
 
-        return $this->renderContext().$reduxStoreTag;
+        return $this->renderContext() . $reduxStoreTag;
     }
 
     public function reactFlushBuffer(): string
@@ -300,7 +302,7 @@ class ReactRenderExtension extends AbstractExtension
             return $this->doServerSideRender($data);
         }
 
-        $cacheItem = $this->cache->getItem($data['component_name'].$this->getCacheKey($options, $data));
+        $cacheItem = $this->cache->getItem($data['component_name'] . $this->getCacheKey($options, $data));
         if ($cacheItem->isHit()) {
             return $cacheItem->get();
         }
@@ -315,7 +317,7 @@ class ReactRenderExtension extends AbstractExtension
 
     private function getCacheKey($options, $data): string
     {
-        return isset($options['cache_key']) && $options['cache_key'] ? $options['cache_key'] : $data['component_name'].'.rendered';
+        return isset($options['cache_key']) && $options['cache_key'] ? $options['cache_key'] : $data['component_name'] . '.rendered';
     }
 
     private function shouldCache($options): bool
