@@ -2,8 +2,7 @@
 
 namespace Limenius\ReactBundle\ReactRenderer\Renderer;
 
-use Limenius\
-ReactBundle\ReactRenderer\Context\ContextProviderInterface;
+use Limenius\ReactBundle\ReactRenderer\Context\ContextProviderInterface;
 use Psr\Log\LoggerInterface;
 
 /**

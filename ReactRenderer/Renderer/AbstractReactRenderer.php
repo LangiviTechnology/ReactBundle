@@ -1,6 +1,6 @@
 <?php
 
-namespace LimeniusReactBundle\ReactRenderer\Renderer;
+namespace Limenius\ReactBundle\ReactRenderer\Renderer;
 
 use Limenius\ReactBundle\ReactRenderer\Exception\EvalJsException;
 use Psr\Log\LoggerInterface;
