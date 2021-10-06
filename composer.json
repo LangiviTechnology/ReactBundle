@@ -11,7 +11,9 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Limenius\\ReactBundle\\": "" }
+        "psr-4": { "Limenius\\ReactBundle\\": "",
+            "Limenius\\ReactRenderer\\": "./ReactRenderer"
+        }
     },
     "require": {
         "php": ">=7.0",
