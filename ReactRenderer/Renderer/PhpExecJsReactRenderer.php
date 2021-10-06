@@ -1,10 +1,10 @@
 <?php
 
-namespace LimeniusReactBundle\ReactRenderer\Renderer;
+namespace Limenius\ReactBundle\ReactRenderer\Renderer;
 
 use Nacmartin\PhpExecJs\PhpExecJs;
 use Psr\Log\LoggerInterface;
-use LimeniusReactBundle\ReactRenderer\Context\ContextProviderInterface;
+use Limenius\ReactBundle\ReactRenderer\Context\ContextProviderInterface;
 use Psr\Cache\CacheItemPoolInterface;
 
 /**

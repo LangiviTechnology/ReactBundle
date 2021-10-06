@@ -5,8 +5,8 @@ namespace Limenius\ReactBundle\ReactRenderer\Twig;
 use Psr\Cache\CacheItemPoolInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
-use LimeniusReactBundle\ReactRenderer\Renderer\AbstractReactRenderer;
-use LimeniusReactBundle\ReactRenderer\Context\ContextProviderInterface;
+use Limenius\ReactBundle\ReactRenderer\Renderer\AbstractReactRenderer;
+use Limenius\ReactBundle\ReactRenderer\Context\ContextProviderInterface;
 
 class ReactRenderExtension extends AbstractExtension
 {
@@ -249,7 +249,7 @@ class ReactRenderExtension extends AbstractExtension
         $json = json_encode($input);
 
         if (json_last_error() !== 0) {
-            throw new \LimeniusReactBundle\ReactRenderer\Exception\PropsEncodeException(
+            throw new \Limenius\ReactBundle\ReactRenderer\Exception\PropsEncodeException(
                 sprintf(
                     'JSON could not be encoded, Error Message was %s',
                     json_last_error_msg()
@@ -265,7 +265,7 @@ class ReactRenderExtension extends AbstractExtension
         $json = json_decode($input, true);
 
         if (json_last_error() !== 0) {
-            throw new \LimeniusReactBundle\ReactRenderer\Exception\PropsDecodeException(
+            throw new \Limenius\ReactBundle\ReactRenderer\Exception\PropsDecodeException(
                 sprintf(
                     'JSON could not be decoded, Error Message was %s',
                     json_last_error_msg()

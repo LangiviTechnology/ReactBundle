@@ -5,9 +5,9 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="limenius_react.external_react_renderer.class">Limenius\ReactRenderer\Renderer\ExternalServerReactRenderer</parameter>
-        <parameter key="limenius_react.phpexecjs_react_renderer.class">Limenius\ReactRenderer\Renderer\PhpExecJsReactRenderer</parameter>
-        <parameter key="limenius_react.context_provider.class">Limenius\ReactRenderer\Context\SymfonyContextProvider</parameter>
+        <parameter key="limenius_react.external_react_renderer.class">Limenius\ReactBundle\ReactRenderer\Renderer\ExternalServerReactRenderer</parameter>
+        <parameter key="limenius_react.phpexecjs_react_renderer.class">Limenius\ReactBundle\ReactRenderer\Renderer\PhpExecJsReactRenderer</parameter>
+        <parameter key="limenius_react.context_provider.class">Limenius\ReactBundle\ReactRenderer\ReactRenderer\Context\SymfonyContextProvider</parameter>
     </parameters>
 
     <services>

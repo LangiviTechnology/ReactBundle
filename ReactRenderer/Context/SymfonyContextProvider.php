@@ -1,6 +1,6 @@
 <?php
 
-namespace LimeniusReactBundle\ReactRenderer\Context;
+namespace Limenius\ReactBundle\ReactRenderer\Context;
 
 use Symfony\Component\HttpFoundation\RequestStack;
 

@@ -241,7 +241,7 @@ In this case, having to change your configuration is very bothersome and should 
 
 namespace App\Renderer;
 
-use Limenius\ReactRenderer\Renderer\PhpExecJsReactRenderer;
+use Limenius\ReactBundle\ReactRenderer\Renderer\PhpExecJsReactRenderer;
 use Symfony\Component\Asset\Packages;
 
 class CustomPhpExecJsReactRenderer extends PhpExecJsReactRenderer

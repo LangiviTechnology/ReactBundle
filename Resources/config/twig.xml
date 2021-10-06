@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="limenius_react.render_extension.class">Limenius\ReactRenderer\Twig\ReactRenderExtension</parameter>
+        <parameter key="limenius_react.render_extension.class">Limenius\ReactBundle\ReactRenderer\Twig\ReactRenderExtension</parameter>
     </parameters>
 
     <services>
