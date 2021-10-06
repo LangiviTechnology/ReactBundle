@@ -13,7 +13,7 @@ First and foremost, note that you have a complete example with React, Webpack an
 Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
-    $ composer require limenius/react-bundle
+    $ composer require langivi/react-bundle
 
 This command requires you to have Composer installed globally, as explained
 in the *installation chapter* of the Composer documentation.
@@ -34,7 +34,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // ...
 
-            new Limenius\ReactBundle\LimeniusReactBundle(),
+            new Langivi\ReactBundle\LangiviReactBundle(),
         );
 
         // ...
@@ -118,7 +118,7 @@ If not configured otherwise this bundle will try to find your server side JavaSc
 You can insert React components in your Twig templates with:
 
 ```twig
-{{ react_component('RecipesApp', {'props': props}) }}
+{{ react_component('RecipesApp',  { 'props': props, 'className':classes}) }}
 ```
 
 Where `RecipesApp` is, in this case, the name of our component, and `props` are the props for your component. Props can either be a JSON encoded string or an array.

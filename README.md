@@ -21,7 +21,7 @@ Features include:
 
 The documentation for this bundle is available in the `Resources/doc` directory of the bundle:
 
-* Read the [LimeniusReactBundle documentation](https://github.com/LangiviTechnology/ReactBundle/blob/master/Resources/doc/index.md)
+* Read the [LangiviReactBundle documentation](https://github.com/LangiviTechnology/ReactBundle/blob/master/Resources/doc/index.md)
 
 # Installation
 
