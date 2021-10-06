@@ -1,6 +1,6 @@
 <?php
 
-namespace Limenius\ReactRenderer\Context;
+namespace LimeniusReactBundle\ReactRenderer\Context;
 
 /**
  * Interface ContextProviderInterface

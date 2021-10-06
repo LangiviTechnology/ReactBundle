@@ -11,8 +11,8 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Limenius\\ReactBundle\\": "",
-            "Limenius\\ReactRenderer\\": "./ReactRenderer"
+        "psr-4": {
+            "Limenius\\ReactBundle\\": ""
         }
     },
     "require": {

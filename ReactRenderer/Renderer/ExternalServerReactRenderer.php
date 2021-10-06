@@ -1,8 +1,8 @@
 <?php
 
-namespace Limenius\ReactRenderer\Renderer;
+namespace LimeniusReactBundle\ReactRenderer\Renderer;
 
-use Limenius\ReactRenderer\Context\ContextProviderInterface;
+use LimeniusReactBundle\ReactRenderer\Context\ContextProviderInterface;
 use Psr\Log\LoggerInterface;
 
 /**

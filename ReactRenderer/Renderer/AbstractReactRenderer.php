@@ -1,10 +1,10 @@
 <?php
 
-namespace Limenius\ReactRenderer\Renderer;
+namespace LimeniusReactBundle\ReactRenderer\Renderer;
 
-use Limenius\ReactRenderer\Exception\EvalJsException;
+use LimeniusReactBundle\ReactRenderer\Exception\EvalJsException;
 use Psr\Log\LoggerInterface;
-use Limenius\ReactRenderer\Context\ContextProviderInterface;
+use LimeniusReactBundle\ReactRenderer\Context\ContextProviderInterface;
 
 /**
  * Class AbstractReactRenderer
