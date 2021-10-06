@@ -127,7 +127,7 @@ class ReactRenderExtension extends AbstractExtension
             'props' => $propsArray,
             'dom_id' => strtolower($componentName) . '-' . uniqid(true),
             'trace' => $this->shouldTrace($options),
-            'className' => $options['class'] ?? ''
+            'className' => $options['className'] ?? ''
         );
 
         if ($this->shouldRenderClientSide($options)) {
