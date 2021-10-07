@@ -120,7 +120,19 @@ You can insert React components in your Twig templates with:
 ```twig
 {{ react_component('RecipesApp',  { 'props': props, 'className':classes}) }}
 ```
-
+General signature of twig component:
+```twig
+{{ react_component(string componentName, array options) }}
+```
+Options consists of:
+```
+{ 
+ 'props': json stringified data,
+ 'className':string,
+ 'trace': boolean,
+ 'rendering': 'both'|'server_side'|'client_side'
+}
+```
 Where `RecipesApp` is, in this case, the name of our component, and `props` are the props for your component. Props can either be a JSON encoded string or an array.
 
 For instance, a controller action that will produce a valid props could be:
